@@ -88,8 +88,8 @@ public void Passx(int z,int strp){
         newaccnt.setText(" New Account");
         newaccnt.setToolTipText("create a new account");
         newaccnt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                newaccntActionPerformed(evt);
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+            newaccntActionPerformed(evt);
             }
         });
 
@@ -157,24 +157,19 @@ public void Passx(int z,int strp){
         int i ;
         boolean falso = false;
         if((user1.getText().equals(admin)) && (password1.getText().equals(adminpass))){
-            
             falso = true;
             setVisible(false);
- 
         }
         si = Integer.parseInt(user1.getText());
         for(i=0 ; i < account.length; i++){
              if (((user1.getText().equals(admin)) && (password1.getText().equals(adminpass)) || (account[i]==(Integer.parseInt(user1.getText())) && password[i]==(Integer.parseInt(password1.getText()))))){
-            
-           new myGUI14().setVisible(true);
-            falso = true;
-            setVisible(false);
-            //myGUI14.usuario.setText(""+account[i]);
-            myGUI14.usuario.setText(""+user1.getText());
-            
-            break;
-
-        }
+                 new myGUI14().setVisible(true);
+                falso = true;
+                setVisible(false);
+                //myGUI14.usuario.setText(""+account[i]);
+                 myGUI14.usuario.setText(""+user1.getText());
+                 break;
+            }
        } 
         if (falso == false){
             JOptionPane.showMessageDialog(null, "Invalid User Name OR Password");
@@ -191,16 +186,10 @@ public void Passx(int z,int strp){
    //OPENS THE newaccnt  CLASS TO CREATEA NEW ACCOUNT
     private void newaccntActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newaccntActionPerformed
         JOptionPane.showMessageDialog(null, "WHEN YOU CREATE YOUR ACCOUNT ONLY USE NUMERICAL CHARACTERS");
-        
         new newaccnt().setVisible(true);
-        
-    
-              
     }//GEN-LAST:event_newaccntActionPerformed
 
 private void user1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_user1ActionPerformed
-
-
     user = 0;
 }//GEN-LAST:event_user1ActionPerformed
 
@@ -209,21 +198,19 @@ private void password1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
 }//GEN-LAST:event_password1ActionPerformed
 //program created by Patricio Vargas CopyRight
     private void user1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_user1MouseClicked
-user1.setEditable(true);                                     
-user1.setText("");
-user1.setForeground(Color.BLACK);
-Font font1 = new Font("Tahoma", Font.PLAIN, 12);
-user1.setFont(font1);
-
-
+        user1.setEditable(true);                                     
+        user1.setText("");
+        user1.setForeground(Color.BLACK);
+        Font font1 = new Font("Tahoma", Font.PLAIN, 12);
+        user1.setFont(font1);
     }//GEN-LAST:event_user1MouseClicked
 
     private void password1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_password1MouseClicked
- password1.setText("");
- password1.setEditable(true);
- password1.setForeground(Color.BLACK);
- Font font2 = new Font("Tahoma", Font.PLAIN, 12);
- password1.setFont(font2);
+        password1.setText("");
+        password1.setEditable(true);
+        password1.setForeground(Color.BLACK);
+        Font font2 = new Font("Tahoma", Font.PLAIN, 12);
+        password1.setFont(font2);
 //program created by Patricio Vargas CopyRight 
     }//GEN-LAST:event_password1MouseClicked
 
