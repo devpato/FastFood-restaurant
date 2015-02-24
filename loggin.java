@@ -16,11 +16,9 @@ public class loggin extends javax.swing.JFrame {
     
     static int[] account = new int[10];
     static int [] password = new int [10];
-   String  admin = "123789";
-   String adminpass = "123789";
-    
+    String  admin = "123789";
+    String adminpass = "123789";
     int si;
-            
     int user;
  //program created by Patricio Vargas CopyRight   
 public int Account(int k){
